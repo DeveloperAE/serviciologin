@@ -1,4 +1,8 @@
 <?php 
+
+    header("Access-Control-Allow-Origin: *");
+    $cn = new mysqli("localhost","root","","proyectocasas");
+
     require_once("config.php");
     $usuario = $_POST["usuario"];
     $clave = $_POST["clave"];
